@@ -211,6 +211,54 @@
    <object-name>gear.front</object-name>
 
 
+ <!-- wheel spin
+ The factor is 60 / circumference, which converts meters/sec to rpm
+ -->
+   
+ <animation>
+	<type>spin</type>
+	<object-name>frontWheel</object-name>
+	<!--diameter 0.727, circ=2.284m-->	
+	<condition>
+		<property>gear/gear[0]/wow</property>
+	</condition>
+	<property>/gear/gear[0]/rollspeed-ms</property>
+	<factor>-26.270</factor>
+	<center>
+		<x-m>-10.53465</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-2.31526</z-m>
+	</center>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+</animation>
+
+ <animation>
+	<type>spin</type>
+	<object-name>rearWheel</object-name>
+	<!--diameter 1.033, circ=3.245m-->	
+	<condition>
+		<property>gear/gear[1]/wow</property>
+	</condition>
+	<property>/gear/gear[1]/rollspeed-ms</property>
+	<factor>-18.490</factor>
+	<center>
+		<x-m>-1.05874</x-m>
+		<y-m>0.0</y-m>
+		<z-m>-2.15291</z-m>
+	</center>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+</animation>
+
+
+   
 
  <!-- Elevator -->
   <animation>
